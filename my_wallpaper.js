@@ -19,7 +19,7 @@ function setup_wallpaper(pWallpaper) {
 function wallpaper_background() {
   background(240, 255, 240); //light honeydew green colour
 }
-//changes
+
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   rect(40 ,40, rect_width, rect_height);
 }
