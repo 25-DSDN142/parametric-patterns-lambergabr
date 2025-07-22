@@ -27,25 +27,25 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 fill(234, 200, 137); //faded yellow
 
-//Vertical Thread
+//1st Thread
 
     // Start drawing the shape. 
   beginShape();
     // Add vertices.
-  vertex(threadWidth,0);
-  vertex(threadWidth,threadHeight*2);
-  vertex(threadWidth*2,threadHeight*2);
-  vertex(threadWidth*2, 0);
+  vertex(25,0);
+  vertex(25,200);
+  vertex(50,200);
+  vertex(50, 0);
     // Stop drawing the shape.
   endShape(CLOSE);
 
-      // Start drawing the shape. 2nd Thread Vertical
-  beginShape();
+
+ beginShape();
     // Add vertices.
-  vertex(threadWidth*2,0);
-  vertex(threadWidth*2,threadHeight*2);
-  vertex(threadWidth*3,threadHeight*2);
-  vertex(threadWidth*3, 0);
+  vertex(175,0);
+  vertex(150,0);
+  vertex(150,200);
+  vertex(175, 200);
     // Stop drawing the shape.
   endShape(CLOSE);
 
@@ -53,20 +53,20 @@ fill(234, 200, 137); //faded yellow
         // Start drawing the shape. 3rd Thread Horizontal
   beginShape();
     // Add vertices.
-  vertex(threadWidth*0,threadHeight/2);
-  vertex(threadWidth*0,threadHeight-25);
-  vertex(threadWidth+175,threadHeight-25);
-  vertex(threadWidth+175, threadHeight/2);
+  vertex(threadWidth*0,25);
+  vertex(threadWidth*0,50);
+  vertex(threadWidth+175,50);
+  vertex(threadWidth+175, 25);
     // Stop drawing the shape.
   endShape(CLOSE);
 
-          // Start drawing the shape. 4th Thread Horizontal
+          // Start drawing the shape. 3rd Thread Horizontal
   beginShape();
     // Add vertices.
-  vertex(threadWidth*0,threadHeight-25);
-  vertex(threadWidth*0,threadHeight);
-  vertex(threadWidth+175,threadHeight);
-  vertex(threadWidth+175, threadHeight-25);
+  vertex(0,150 );
+  vertex(0, 175);
+  vertex(200,175);
+  vertex(200, 150);
     // Stop drawing the shape.
   endShape(CLOSE);
 
