@@ -2,6 +2,19 @@
 let rect_width  = 20;
 let rect_height = 30;
 
+  let x1 =-350 //300
+  let y1 = 25 //25
+
+  let x2 = 100 //100
+  let y2 = 0 //0
+
+  let x3 = 100 //100
+  let y3 = 200 //200
+
+  let x4 = 500 //500
+  let y4 = 200 //175
+
+let Bubble = true;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -13,61 +26,65 @@ function setup_wallpaper(pWallpaper) {
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 200;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.row_offset  = 0;
 }
 
 function wallpaper_background() {
-  background(255, 233, 182); //light honeydew green colour
+  background(24, 10, 10); //light yellow colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
- var threadWidth = 25 //25
- var threadHeight = 100 //100
+          // Draw BASE spine curve
+  noFill();
+  strokeWeight(150);
+  stroke(40, 5, 5);
+  curve(x1, y1, x2, y2, x3, y3, x4, y4);
 
-fill(234, 200, 137); //faded yellow
+        // Draw 0 spine curve
+  noFill();
+  strokeWeight(125);
+  stroke(87, 10, 10);
+  curve(x1, y1, x2, y2, x3, y3, x4, y4);
 
-//1st Thread
+      // Draw 1 spine curve
+  noFill();
+  strokeWeight(100);
+  stroke(150, 22, 22);
+  curve(x1, y1, x2, y2, x3, y3, x4, y4);
 
-    // Start drawing the shape. 
-  beginShape();
-    // Add vertices.
-  vertex(25,0);
-  vertex(25,200);
-  vertex(50,200);
-  vertex(50, 0);
-    // Stop drawing the shape.
-  endShape(CLOSE);
+        // Draw 2 spine curve
+  noFill();
+  strokeWeight(75);
+  stroke(241, 185, 158);
+  curve(x1, y1, x2, y2, x3, y3, x4, y4);
+
+          // Draw 3 spine curve
+  noFill();
+  strokeWeight(50);
+  stroke(249, 218, 185);
+  curve(x1, y1, x2, y2, x3, y3, x4, y4);
+
+      // Draw 4 spine curve
+  noFill();
+  strokeWeight(25);
+  stroke(255, 231, 191);
+  curve(x1, y1, x2, y2, x3, y3, x4, y4);
+
+    // Draw 5 spine curve
+  noFill();
+  strokeWeight(5);
+  stroke(251, 243, 220);
+  curve(x1, y1, x2, y2, x3, y3, x4, y4);
 
 
- beginShape();
-    // Add vertices.
-  vertex(175,0);
-  vertex(150,0);
-  vertex(150,200);
-  vertex(175, 200);
-    // Stop drawing the shape.
-  endShape(CLOSE);
-
-//Horizontal Threads
-        // Start drawing the shape. 3rd Thread Horizontal
-  beginShape();
-    // Add vertices.
-  vertex(threadWidth*0,25);
-  vertex(threadWidth*0,50);
-  vertex(threadWidth+175,50);
-  vertex(threadWidth+175, 25);
-    // Stop drawing the shape.
-  endShape(CLOSE);
-
-          // Start drawing the shape. 3rd Thread Horizontal
-  beginShape();
-    // Add vertices.
-  vertex(0,150 );
-  vertex(0, 175);
-  vertex(200,175);
-  vertex(200, 150);
-    // Stop drawing the shape.
-  endShape(CLOSE);
+  if(Bubble == true) {
+    fill(255);
+    ellipse(100, 0, 25);
+    ellipse(122, 25, 20);
+    ellipse(120, 55, 15);
+    
+  }
+  
 
 }
