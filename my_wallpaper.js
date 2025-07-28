@@ -17,8 +17,8 @@ let rect_height = 30;
 let Bubble = false;
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
-  //pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
@@ -35,7 +35,7 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-  drawPlant();
+  //drawPlant();
 function drawPlant(){
 
          // Draw BASE spine curve
@@ -90,12 +90,94 @@ function drawPlant(){
     ellipse(120, 55, 15); 
   }
 
-//drawSeed();
+  drawSeed();
 function drawSeed(){
   
-    fill(255);
-    ellipse(100, 25, 50);
-    ellipse(125, 50, 35);
-    ellipse(120, 75, 20);
+  let c1 = 255
+  let sizeCircle = 25
+
+    //Base Gradient
+    fill(243, 64, 51);
+    stroke(243, 64, 51);
+    ellipse(100, 25, sizeCircle*2);
+    ellipse(125, 50, sizeCircle); //20
+    ellipse(120, 80, sizeCircle+10); //15
+
+      ellipse(100, 100, sizeCircle+5); //10
+
+    ellipse(100, 175, sizeCircle+20); //25
+    ellipse(75, 150, sizeCircle+15); //20
+    ellipse(80, 120, sizeCircle+10); //15
+
+  //5th Gradient
+    fill(246, 108, 84);
+    stroke(246, 108, 84);
+    ellipse(100, 25, sizeCircle+20);
+    ellipse(125, 50, sizeCircle+15); //20
+    ellipse(120, 80, sizeCircle+10); //15
+
+      ellipse(100, 100, sizeCircle+5); //10
+
+    ellipse(100, 175, sizeCircle+20); //25
+    ellipse(75, 150, sizeCircle+15); //20
+    ellipse(80, 120, sizeCircle+10); //15
+
+  //4th Gradient
+    fill(248, 149, 106);
+    stroke(248, 149, 106);
+    ellipse(100, 25, sizeCircle+15);
+    ellipse(125, 50, sizeCircle+10); //20
+    ellipse(120, 80, sizeCircle+5); //15
+  
+  ellipse(100, 100, sizeCircle); //10
+
+    ellipse(100, 175, sizeCircle+15); //25
+    ellipse(75, 150, sizeCircle+10); //20
+    ellipse(80, 120, sizeCircle+5); //15
+
+//3rd Gradient
+    fill(246, 189, 131);
+    stroke(246, 189, 131);
+    ellipse(100, 25, sizeCircle+10);
+    ellipse(125, 50, sizeCircle+5); //20
+    ellipse(120, 80, sizeCircle); //15
+  
+  ellipse(100, 100, sizeCircle-5); //10
+
+    ellipse(100, 175, sizeCircle+10); //25
+    ellipse(75, 150, sizeCircle+5); //20
+    ellipse(80, 120, sizeCircle); //15
+
+//2nd Gradient
+    fill(253, 238, 182);
+    stroke(253, 238, 182);
+    ellipse(100, 25, sizeCircle+5);
+    ellipse(125, 50, sizeCircle); //20
+    ellipse(120, 80, sizeCircle-5); //15
+  
+  ellipse(100, 100, sizeCircle-10); //10
+
+    ellipse(100, 175, sizeCircle+5); //25
+    ellipse(75, 150, sizeCircle); //20
+    ellipse(80, 120, sizeCircle-5); //15
+
+
+//Light Source
+    fill(c1);
+    stroke(c1);
+    ellipse(100, 25,sizeCircle); //25
+    ellipse(125, 50, sizeCircle-5); //20
+    ellipse(120, 80, sizeCircle-10); //15
+
+   ellipse(100, 100, sizeCircle-15); //10
+
+    ellipse(100, 175, sizeCircle); //25
+    ellipse(75, 150, sizeCircle-5); //20
+    ellipse(80, 120, sizeCircle-10); //15
+
+
+
+
+
  }
 }
