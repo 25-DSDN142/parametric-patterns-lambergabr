@@ -2,7 +2,7 @@
 let rect_width  = 20;
 let rect_height = 30;
 
-  let x1 =-350 //300
+  let x1 =-300 //-300
   let y1 = 25 //25
 
   let x2 = 100 //100
@@ -12,9 +12,9 @@ let rect_height = 30;
   let y3 = 200 //200
 
   let x4 = 500 //500
-  let y4 = 200 //175
+  let y4 = 175 //175
 
-let Bubble = true;
+let Bubble = false;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -35,7 +35,10 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-          // Draw BASE spine curve
+  drawPlant();
+function drawPlant(){
+
+         // Draw BASE spine curve
   noFill();
   strokeWeight(150);
   stroke(40, 5, 5);
@@ -78,13 +81,21 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   curve(x1, y1, x2, y2, x3, y3, x4, y4);
 
 
+  }
+
   if(Bubble == true) {
     fill(255);
     ellipse(100, 0, 25);
     ellipse(122, 25, 20);
-    ellipse(120, 55, 15);
-    
+    ellipse(120, 55, 15); 
   }
-  
 
+//drawSeed();
+function drawSeed(){
+  
+    fill(255);
+    ellipse(100, 25, 50);
+    ellipse(125, 50, 35);
+    ellipse(120, 75, 20);
+ }
 }
