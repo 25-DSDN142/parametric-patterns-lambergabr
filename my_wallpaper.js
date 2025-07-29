@@ -14,7 +14,7 @@ let rect_height = 30;
   let x4 = 500 //500
   let y4 = 175 //175
 
-let Bubble = true;
+let Bubble = false;
 
 function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -74,7 +74,7 @@ function drawPlant(){
   stroke(255, 231, 191);
   curve(x1, y1, x2, y2, x3, y3, x4, y4);
 
-    // Draw 5 spine curve
+    // Draw lightest curve
   noFill();
   strokeWeight(5);
   stroke(251, 243, 220);
@@ -86,7 +86,6 @@ function drawPlant(){
   if(Bubble == true) {
     fill(255);
     ellipse(100, 0, 25);
-    ellipse(122, 25, 20);
-    ellipse(120, 55, 15); 
+
   }
 }
