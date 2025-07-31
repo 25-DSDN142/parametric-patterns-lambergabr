@@ -30,7 +30,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(24, 10, 10); //light yellow colour
+  background(67, 6, 41); //Deep purple colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -41,13 +41,13 @@ function drawPlant(){
          // Draw BASE spine curve
   noFill();
   strokeWeight(150);
-  stroke(40, 5, 5);
+  stroke(84, 7, 50);
   curve(x1, y1, x2, y2, x3, y3, x4, y4);
 
         // Draw 0 spine curve
   noFill();
   strokeWeight(125);
-  stroke(87, 10, 10);
+  stroke(127, 12, 12);
   curve(x1, y1, x2, y2, x3, y3, x4, y4);
 
       // Draw 1 spine curve
@@ -59,22 +59,22 @@ function drawPlant(){
         // Draw 2 spine curve
   noFill();
   strokeWeight(75);
-  stroke(241, 185, 158);
+  stroke(169, 56, 8);
   curve(x1, y1, x2, y2, x3, y3, x4, y4);
 
           // Draw 3 spine curve
   noFill();
   strokeWeight(50);
-  stroke(249, 218, 185);
+  stroke(190, 65, 7);
   curve(x1, y1, x2, y2, x3, y3, x4, y4);
 
       // Draw 4 spine curve
   noFill();
   strokeWeight(25);
-  stroke(255, 231, 191);
+  stroke(231, 86, 2);
   curve(x1, y1, x2, y2, x3, y3, x4, y4);
 
-    // Draw lightest curve
+    // Draw 5 lightest curve
   noFill();
   strokeWeight(5);
   stroke(251, 243, 220);
